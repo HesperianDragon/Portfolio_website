@@ -1,0 +1,231 @@
+@import url("https://fonts.google.com/specimen/ABeeZee");
+body{
+    margin: 0px;
+    color: var(--main-text-color);
+    font-family: ABeeZee;
+    font-size: 16px;
+}
+
+:root{
+    --main-text-color: #262626;
+    --blue: #00D4FF;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+em{
+    color: #666666;
+}
+
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--main-text-color);
+}
+
+
+hr{
+    max-width: 100%;
+    border-top: none;
+    border-color: #919191;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#back-to-top{
+    padding: 9px 10px 9px 10px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    border-radius: 999px;
+    }
+
+#back-to-top:hover{
+    color: var(--main-text-color);
+    background-color: #ffffff;
+}
+
+
+
+
+
+/* SIGH IK MOET DIE BORDER OPLOSSEN */
+button:visited{
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    background-color: red;
+}
+
+/* Header */
+header{
+    max-width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.header-photo{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+
+
+nav{
+    position: fixed;
+    background-color: var(--blue);
+}
+
+nav ul{
+    display:inline;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #666666;
+}
+
+
+/* Navigationbar */
+nav{
+    max-width: 1024px;
+    
+}
+
+nav img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+nav ul{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+nav ul li{
+    padding: 0px 10px 0px 0px;
+
+}
+
+/* Article */
+article{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.projectInformation{
+    max-width: 250px;
+    padding-left: 10%;
+    padding-bottom: 20px;
+}
+
+.projectImage{
+    width: 100%;
+    right:0px;
+}
+
+#contactMe{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    padding: 0px 10px 0px 10px;
+}
+
+.contact-social a{
+    line-height: 10px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 20px 10px; 
+    max-width: 500px;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    color: #cccccc;
+    background-color: #262626;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-text-center{
+    position: absolute;
+    padding: 10px;
+    width:33%;
+    top: 15px;
+    left: 0px;
+    color:white;
+    text-transform: uppercase;
+    font-size: 5px;
+    background-color: var(--blue);
+}
+
+
+
+@media (min-width:500px){
+    .project{
+        max-width: 900px;
+    }
+    .projectImage{
+        max-width: 600px;
+    }
+
+    .image-text-center{
+        font-size: 11px;
+        top: 50px;
+
+    }
+}
+/*****************************/
+/* Specificaties voor tablet */
+/*****************************/
+@media (min-width: 750px){
+    .project{
+        display: flex;
+        flex-direction: row;
+            justify-content: space-evenly;
+        
+    }
+
+    #contactMe{
+        flex-direction: row;
+    }
+
+    
+}
+
+/*****************************/
+/* Specificaties voor desktop */
+/*****************************/
+@media (min-width: 1024px){
+    body{margin:0px;}
+
+    
+}
