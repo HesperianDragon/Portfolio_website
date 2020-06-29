@@ -47,20 +47,18 @@ button{
 }
 
 #back-to-top{
+    grid-area: button;
     padding: 9px 10px 9px 10px;
     border: 2px solid #ffffff;
     color: #ffffff;
     border-radius: 999px;
-    }
+    
+}
 
 #back-to-top:hover{
     color: var(--main-text-color);
     background-color: #ffffff;
 }
-
-
-
-
 
 /* SIGH IK MOET DIE BORDER OPLOSSEN */
 button:visited{
@@ -173,6 +171,20 @@ footer{
     padding: 80px 0px;
     display: flex;
     justify-content: center;
+    
+}
+
+#footer-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-button-grid {
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: auto 40px auto;
+    grid-template-areas:
+    ". button .";
 }
 
 .image-text-center{
