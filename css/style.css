@@ -1,14 +1,15 @@
 @import url("https://fonts.google.com/specimen/ABeeZee");
 body{
     margin: 0px;
-    color: var(--main-text-color);
+    color: var(--black);
     font-family: ABeeZee;
     font-size: 16px;
 }
 
 :root{
-    --main-text-color: #262626;
+    --black: #262626;
     --blue: #00D4FF;
+    --background-color-grey: #f7f7f7;
 }
 
 h2{
@@ -28,7 +29,7 @@ a{
 }
 
 a:hover{
-    color: var(--main-text-color);
+    color: var(--black);
 }
 
 
@@ -38,13 +39,28 @@ hr{
     border-color: #919191;
 }
 
-button{
+/* Specifications buttons */
+.btn{
     padding: 10px 20px;
+    min-width: 100px;
+    min-height:10px;
     background-color: var(--blue);
     color: white;
     border: none;
     border-radius: 3px;
+    
 }
+
+.btn-ghost{
+    border: 1px solid #d4d4d4;
+    color: var(--black);
+    background-color: #ffffff;
+}
+
+.btn-ghost:hover{
+    background-color: #ececec;
+}
+
 
 #back-to-top{
     padding: 9px 10px 9px 10px;
@@ -54,35 +70,22 @@ button{
     }
 
 #back-to-top:hover{
-    color: var(--main-text-color);
+    color: var(--black);
     background-color: #ffffff;
 }
 
 
-
-
-
-/* SIGH IK MOET DIE BORDER OPLOSSEN */
-button:visited{
-    border: none;
-    outline: none;
-}
-
-button:hover{
-    background-color: red;
-}
-
 /* Header */
 header{
     max-width: 100%;
-    display: flex;
-    align-items: baseline;
+    background-color: var(--background-color-grey);
+    
 }
 
-.header-photo{
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
+.header-about{
+    max-width: 1024px;  
+    margin: auto;
+    padding: 50px;
 }
 
 
